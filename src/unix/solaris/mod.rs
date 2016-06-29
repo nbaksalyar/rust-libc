@@ -539,6 +539,7 @@ pub const MCL_FUTURE: ::c_int = 0x0002;
 pub const MS_SYNC: ::c_int = 0x0004;
 pub const MS_ASYNC: ::c_int = 0x0001;
 pub const MS_INVALIDATE: ::c_int = 0x0002;
+pub const MS_INVALCURPROC: ::c_int = 0x0008;
 
 pub const EPERM: ::c_int = 1;
 pub const ENOENT: ::c_int = 2;
