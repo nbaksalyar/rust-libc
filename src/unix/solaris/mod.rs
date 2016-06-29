@@ -423,6 +423,8 @@ pub const FIONBIO: ::c_int = 0x8004667e;
 
 pub const SIGCHLD: ::c_int = 18;
 pub const SIGBUS: ::c_int = 10;
+pub const SIG_BLOCK: ::c_int = 1;
+pub const SIG_UNBLOCK: ::c_int = 2;
 pub const SIG_SETMASK: ::c_int = 3;
 
 pub const IPV6_MULTICAST_LOOP: ::c_int = 0x8;
@@ -496,6 +498,9 @@ pub const F_TEST: ::c_int = 3;
 pub const F_TLOCK: ::c_int = 2;
 pub const F_ULOCK: ::c_int = 0;
 pub const F_DUPFD_CLOEXEC: ::c_int = 37;
+pub const F_SETLK: ::c_int = 6;
+pub const F_SETLKW: ::c_int = 7;
+pub const F_GETLK: ::c_int = 14;
 pub const SIGHUP: ::c_int = 1;
 pub const SIGINT: ::c_int = 2;
 pub const SIGQUIT: ::c_int = 3;
