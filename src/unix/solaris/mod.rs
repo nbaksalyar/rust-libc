@@ -988,5 +988,6 @@ extern {
                    flags: ::c_int) -> ::c_int;
    pub fn mkfifoat(dirfd: ::c_int, pathname: *const ::c_char,
                    mode: ::mode_t) -> ::c_int;
+   pub fn sethostname(name: *const ::c_char, len: ::size_t) -> ::c_int;
 }
 
