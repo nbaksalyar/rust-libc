@@ -525,8 +525,12 @@ pub const PROT_EXEC: ::c_int = 4;
 pub const MAP_SHARED: ::c_int = 0x0001;
 pub const MAP_PRIVATE: ::c_int = 0x0002;
 pub const MAP_FIXED: ::c_int = 0x0010;
+pub const MAP_NORESERVE: ::c_int = 0x40;
 pub const MAP_ANON: ::c_int = 0x0100;
-
+pub const MAP_RENAME: ::c_int = 0x20;
+pub const MAP_ALIGN: ::c_int = 0x200;
+pub const MAP_TEXT: ::c_int = 0x400;
+pub const MAP_INITDATA: ::c_int = 0x800;
 pub const MAP_FAILED: *mut ::c_void = !0 as *mut ::c_void;
 
 pub const MCL_CURRENT: ::c_int = 0x0001;
