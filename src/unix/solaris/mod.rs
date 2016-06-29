@@ -308,6 +308,16 @@ s! {
         pub sem_pad1: [u64; 3],
         pub sem_pad2: [u64; 2]
     }
+
+    pub struct flock {
+        pub l_type: ::c_short,
+        pub l_whence: ::c_short,
+        pub l_start: ::off_t,
+        pub l_len: ::off_t,
+        pub l_sysid: ::c_int,
+        pub l_pid: ::pid_t,
+        pub l_pad: [::c_long; 4]
+    }
 }
 
 pub const LC_CTYPE: ::c_int = 0;
